@@ -1,10 +1,10 @@
 import Hero from "@/components/Hero";
-import FeaturedCourses from "@/components/FeaturedCourses";
-import WhyChooseMe from "@/components/WhyChooseMe";
 import TestimonialCards from "@/components/TestimonialCards";
 import UpcomingWebinars from "@/components/UpcomingWebinars";
 import Instructors from "@/components/Instructors";
 import Footer from "@/components/Footer";
+import MyProjects from "@/components/MyProjects";
+import MyExperiences from "@/components/MyExperiences";
 
 export default function Home() {
   return (
@@ -13,8 +13,8 @@ export default function Home() {
     bg-grid-white/[0.02]"
     >
       <Hero />
-      <FeaturedCourses />
-      <WhyChooseMe />
+      <MyProjects />
+      <MyExperiences />
       <TestimonialCards />
       <UpcomingWebinars />
       <Instructors />
