@@ -24,7 +24,7 @@ function Hero() {
         </h1>
         <div
           className="mt-4 font-normal text-base 
-           md:text-lg text-neutral-300 max-w-xl mx-auto"
+           md:text-lg sm:text-md text-neutral-300 max-w-xl mx-auto"
         >
           <HeroText />
         </div>

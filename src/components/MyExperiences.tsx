@@ -99,7 +99,7 @@ const experiences: Experiences[] = [
 
 function MyExperiences() {
   return (
-    <div className="py-12" id="myexperiences">
+    <div className="py-12 mt-10 bg-black" id="myexperiences">
       <div className="text-center">
         <h2
           className="text-base text-teal-600 font-semibold 
@@ -116,10 +116,7 @@ function MyExperiences() {
         </p>
       </div>
       <div className="mt-20">
-        <div
-          className="grid grid-cols-1 sm:grid-cols-2 
-        lg:grid-cols-3 gap-y-8"
-        >
+        <div className="flex flex-wrap justify-center items-center gap-8 mx-10">
           {experiences.map((experience) => (
             <div
               key={experience.title}

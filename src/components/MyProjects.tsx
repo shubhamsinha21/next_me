@@ -149,12 +149,12 @@ function MyProjects() {
                 </div>
                 <div className="flex justify-between items-center mt-6">
                   <Link href={item.github}>
-                    <button className="w-28 font-semibold px-4 py-2 rounded-md border border-black bg-white text-teal-600 text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
+                    <button className="w-28 max-sm:w-20 font-semibold px-4 max-sm:px-2 py-2 rounded-md border border-black bg-white text-teal-600 text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
                       Github
                     </button>
                   </Link>
                   <Link href={item.live}>
-                    <button className="w-28 px-4 py-2 font-semibold rounded-md border border-black bg-white text-teal-600 text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
+                    <button className="w-28 max-sm:w-20 px-4 py-2 font-semibold max-sm:px-2 rounded-md border border-black bg-white text-teal-600 text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
                       Live
                     </button>
                   </Link>
