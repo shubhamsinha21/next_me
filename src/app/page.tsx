@@ -1,6 +1,4 @@
 import Hero from "@/components/Hero";
-import TestimonialCards from "@/components/TestimonialCards";
-import UpcomingWebinars from "@/components/UpcomingWebinars";
 import Instructors from "@/components/Instructors";
 import Footer from "@/components/Footer";
 import MyProjects from "@/components/MyProjects";
@@ -15,8 +13,6 @@ export default function Home() {
       <Hero />
       <MyProjects />
       <MyExperiences />
-      <TestimonialCards />
-      <UpcomingWebinars />
       <Instructors />
       <Footer />
     </main>

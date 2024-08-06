@@ -100,7 +100,7 @@ const myprojects: project[] = [
 
 function MyProjects() {
   return (
-    <div className="py-12 bg-gray-900" id="myprojects">
+    <div className="py-12" id="myprojects">
       <div className="text-center">
         <h2
           className="text-base text-teal-600 drop-shadow-lg font-semibold 

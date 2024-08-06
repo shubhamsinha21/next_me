@@ -8,7 +8,7 @@ function Hero() {
     <div
       className="h-auto md:h-[40rem] w-full rounded-md 
     flex flex-col items-center justify-center relative 
-    overflow-hidden mx-auto py-96 dark:bg-grid-white/[0.01]"
+    overflow-hidden mx-auto py-20 md:py-96 dark:bg-grid-white/[0.01]"
     >
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
@@ -24,12 +24,12 @@ function Hero() {
         </h1>
         <div
           className="mt-4 font-normal text-base 
-           md:text-lg text-neutral-300 max-w-2xl mx-auto"
+           md:text-lg text-neutral-300 max-w-xl mx-auto"
         >
           <HeroText />
         </div>
         <div className="mt-4">
-          <Link href="#myprojects">
+          <Link href="project">
             <Button
               borderRadius="1.75rem"
               className="bg-white shadow-xl shadow-black dark:bg-black
