@@ -29,7 +29,7 @@ function Hero() {
           <HeroText />
         </div>
         <div className="mt-4">
-          <Link href="project">
+          <Link href="#myprojects">
             <Button
               borderRadius="1.75rem"
               className="bg-white shadow-xl shadow-black dark:bg-black

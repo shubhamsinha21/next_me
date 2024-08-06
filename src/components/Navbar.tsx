@@ -1,6 +1,6 @@
 "use client";
-import React, { act, useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
+import React, { useState } from "react";
+import { Menu, MenuItem } from "./ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
@@ -35,7 +35,7 @@ function Navbar({ className }: { className?: string }) {
           ></MenuItem>
         </Link>
 
-        <Link href="/">
+        <Link href="#mycontact">
           <MenuItem
             setActive={setActive}
             active={active}
