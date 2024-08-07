@@ -134,8 +134,8 @@ const myprojects: project[] = [
     description: (
       <>
         <p>
-          A single page website, though it's not related to rea world scenario
-          but it showcases my skills.
+          A single page website, though it&apos;s not related to rea world
+          scenario but it showcases my skills.
         </p>
       </>
     ),
