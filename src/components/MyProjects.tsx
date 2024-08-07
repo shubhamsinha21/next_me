@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { TracingBeam } from "./ui/tracing-beam";
 import Link from "next/link";
+import { Meteors } from "./ui/meteors";
 
 interface project {
   title: string;
@@ -15,6 +16,64 @@ interface project {
 }
 
 const myprojects: project[] = [
+  {
+    title: "Portfolio Website",
+    description: (
+      <>
+        <p>
+          Welcome to my Portfolio Website, made with advanced animation and
+          effects.
+        </p>
+      </>
+    ),
+    badge: "Portfolio",
+    image: "/pfolio.png",
+    tech: [
+      {
+        techStack: "Next Js",
+      },
+      {
+        techStack: "React",
+      },
+      {
+        techStack: "Tailwind",
+      },
+      {
+        techStack: "Typescript",
+      },
+      {
+        techStack: "Aceternity UI",
+      },
+    ],
+    github: "https://github.com/shubhamsinha21/next_me",
+    live: "https://github.com/shubhamsinha21/next_me",
+  },
+  {
+    title: "Virtual-R",
+    description: (
+      <>
+        <p>
+          VirtualR build tools for developers | Empower your creativity and
+          bring your VR app ideas to life with our initiative development tools.
+        </p>
+      </>
+    ),
+    badge: "VirtualR",
+    image: "/virtualR.png",
+    tech: [
+      {
+        techStack: "React",
+      },
+      {
+        techStack: "Tailwind",
+      },
+      {
+        techStack: "Javascript",
+      },
+    ],
+    github: "https://github.com/shubhamsinha21/virtual-R",
+    live: "https://virtualrweb.vercel.app/",
+  },
   {
     title: "Web App To Desktop App",
     description: (

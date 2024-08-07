@@ -24,7 +24,7 @@ const experiences: Experiences[] = [
         tech: "Blender",
       },
       {
-        tech: "ML",
+        tech: "Machine Learning",
       },
       {
         tech: "AI",
