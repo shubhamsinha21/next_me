@@ -127,7 +127,7 @@ const myprojects: project[] = [
       },
     ],
     github: "https://github.com/shubhamsinha21/Nike",
-    live: "https://usehub.vercel.app/",
+    live: "https://nikespa.vercel.app/",
   },
   {
     title: "New To Usability",
