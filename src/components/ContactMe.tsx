@@ -3,12 +3,14 @@ import Link from "next/link";
 import { WavyBackground } from "./ui/wavy-background";
 
 interface Contact {
+  title: string;
   linkedIn: string;
   github: string;
 }
 
 const connectWithMe: Contact[] = [
   {
+    title: "social media",
     linkedIn: "https://www.linkedin.com/in/shubham-sinha-39b9b2209/",
     github: "https://github.com/shubhamsinha21",
   },
@@ -37,34 +39,30 @@ function ContactMe() {
         >
           Feel free to contact me
         </p>
-        <div className="flex flex-wrap items-center justify-center w-full gap-10 mb-10 mt-10">
-          {connectWithMe.map((contact, index) => (
-            <>
-              <Link href={contact.linkedIn} key={index}>
+        <div className="flex items-center justify-center w-full mb-10 mt-10">
+          {connectWithMe.map((contact) => (
+            <div
+              key={contact.title}
+              className="flex flex-wrap gap-10 justify-center"
+            >
+              <Link href={contact.linkedIn}>
                 <button className="p-[3px] relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-                  <div className="px-8 py-2 max-sm:text-[10px]  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+                  <div className="px-8 py-2 max-sm:text-[12px]  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
                     Message me on LinkedIn
                   </div>
                 </button>
               </Link>
 
-              <button className="p-[3px] relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-                <div className="px-8 py-2 max-sm:text-[10px]  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-                  shubhamsinha07084@gmail.com
-                </div>
-              </button>
-
-              <Link href={contact.github} key={index}>
+              <Link href={contact.github}>
                 <button className="p-[3px] relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-                  <div className="px-8 py-2 max-sm:text-[10px]  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+                  <div className="px-8 py-2 max-sm:text-[12px]  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
                     Look at my Github
                   </div>
                 </button>
               </Link>
-            </>
+            </div>
           ))}
         </div>
       </WavyBackground>

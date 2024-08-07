@@ -9,7 +9,7 @@ function Hero() {
     <div
       className="h-auto md:h-[40rem] w-full rounded-md 
     flex flex-col items-center justify-center relative 
-    overflow-hidden mx-auto py-20 md:py-96 dark:bg-grid-white/[0.09]"
+    overflow-hidden mx-auto py-16 md:py-96 dark:bg-grid-white/[0.09]"
     >
       <div className="relative ">
         <Meteors number={20} />
@@ -24,7 +24,7 @@ function Hero() {
           className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text 
          text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400"
         >
-          Hey, I'm <br /> Shubham Sinha
+          Hey, I&apos;m <br /> Shubham Sinha
         </h1>
 
         <div

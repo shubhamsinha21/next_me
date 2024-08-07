@@ -132,8 +132,9 @@ function MyExperiences() {
                 </button>
 
                 <div className="flex flex-wrap gap-4 mt-6">
-                  {experience.tech.map((tech, index) => (
+                  {experience.tech.map((tech) => (
                     <button
+                      key={tech.tech}
                       className="px-4 py-1 rounded-md border border-neutral-300
                     bg-gray-900 text-white text-sm hover:-translate-y-1 
                     transform transition duration-200 hover:shadow-md max-sm:text-[12px]"

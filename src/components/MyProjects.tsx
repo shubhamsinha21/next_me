@@ -179,7 +179,7 @@ function MyProjects() {
       <TracingBeam className="px-6 mt-24">
         <div className="max-w-2xl mx-auto antialiased pt-4 relative">
           {myprojects.map((item, index) => (
-            <div key={`content-${index}`} className="mb-20">
+            <div key={index} className="mb-20">
               <h2 className="bg-teal-600 text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
                 {item.badge}
               </h2>
@@ -198,9 +198,10 @@ function MyProjects() {
                 <div className="flex items-center flex-wrap gap-4 mt-4 justify-center">
                   {item.tech.map((stack) => (
                     <button
+                      key={stack.techStack}
                       className="px-4 py-1 rounded-md border border-neutral-300
                      bg-gray-900 text-white text-sm hover:-translate-y-1 
-                     transform transition duration-200 hover:shadow-md max-sm:text-[12px]"
+                     transform transition duration-200 hover:shadow-md max-sm:text-[11px]"
                     >
                       {stack.techStack}
                     </button>
